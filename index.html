@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaori Perfumes | A Arte das Essências</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts para Tipografia Elegante -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- FontAwesome para Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Cabeçalho / Navegação -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        Kaori <span>Perfumes</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#historia">Nossa História</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#localizacao">Onde Estamos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Hero -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Desperte Memórias Através dos Aromas</h1>
+      <p>Perfumes marcantes, fragrâncias exclusivas e cosméticos inspirados no que há de melhor no mundo da perfumaria.</p>
+      <a href="#produtos" class="btn btn-primary">Conheça Nossos Perfumes</a>
+    </div>
+  </section>
+
+  <!-- Nossa História -->
+  <section id="historia" class="historia section-padding">
+    <div class="container historia-grid">
+      <div class="historia-img">
+        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=800" alt="Frascos de perfume Kaori">
+      </div>
+      <div class="historia-texto">
+        <span class="subtitle">Tradição & Elegância</span>
+        <h2>Nossa História</h2>
+        <p>A <strong>Kaori Perfumes</strong> nasceu da paixão por transformar memórias e sensações em fragrâncias inesquecíveis. O termo "Kaori" remete ao perfume sutil, aroma agradável e essência refinada.</p>
+        <p>Inspirada nos grandes ícones do mercado da beleza — combinando a sofisticação da alta perfumaria, a diversidade dos cosméticos do dia a dia e o respeito aos ingredientes botânicos e sustentáveis —, nossa marca desenvolve produtos que realçam a identidade e a autoestima de cada cliente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos (Inspirados em Boticário, Natura, Avon) -->
+  <section id="produtos" class="produtos section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Nossa Coleção</span>
+        <h2>Produtos em Destaque</h2>
+        <p>Fragrâncias marcantes, cuidados corporais e presentes inesquecíveis.</p>
+      </div>
+
+      <!-- Filtros de Categoria -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="perfumaria">Perfumaria</button>
+        <button class="filter-btn" data-filter="corpo">Corpo & Banho</button>
+        <button class="filter-btn" data-filter="kits">Kits Presenteáveis</button>
+      </div>
+
+      <div class="produtos-grid">
+
+        <!-- Produto 1 -->
+        <div class="card-produto" data-category="perfumaria">
+          <div class="card-badge">Bestseller</div>
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=600" alt="Kaori Elixir EDP">
+          </div>
+          <div class="card-body">
+            <span class="categoria">Eau de Parfum</span>
+            <h3>Kaori Elixir Intense (100ml)</h3>
+            <p>Notas amadeiradas de âmbar e baunilha negra. Intenso, marcante e refinado.</p>
+            <div class="card-footer">
+              <span class="preco">R$ 219,90</span>
+              <button class="btn-cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="card-produto" data-category="perfumaria">
+          <div class="card-img">
+            <img src="https://s2.glbimg.com/D9zAr1zlRWjOMwZu-gBg05g3iF0=/e.glbimg.com/og/ed/f/original/2020/11/16/o_boticario_lily.png" alt="Flor de Kaori Eau de Toilette">
+          </div>
+          <div class="card-body">
+            <span class="categoria">Deo Colônia</span>
+            <h3>Flor de Kaori Rosé (75ml)</h3>
+            <p>Buquê floral leve com toque de peônias e tangerina. Perfeito para o dia a dia.</p>
+            <div class="card-footer">
+              <span class="preco">R$ 139,90</span>
+              <button class="btn-cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="card-produto" data-category="corpo">
+          <div class="card-badge">Vegano</div>
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1608248597379-e07443233855?auto=format&fit=crop&q=80&w=600" alt="Hidratante Corporal Kaori Essencial">
+          </div>
+          <div class="card-body">
+            <span class="categoria">Cuidados Corporais</span>
+            <h3>Loção Hidratante Bio-Nourish (400ml)</h3>
+            <p>Hidratação profunda 48h com manteiga de cacau e óleos botânicos nutritivos.</p>
+            <div class="card-footer">
+              <span class="preco">R$ 68,90</span>
+              <button class="btn-cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="card-produto" data-category="corpo">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=600" alt="Body Splash Kaori Breeze">
+          </div>
+          <div class="card-body">
+            <span class="categoria">Body Splash</span>
+            <h3>Kaori Velvet Breeze (200ml)</h3>
+            <p>Sensação de frescor pós-banho com acordes cítricos e florais sutis.</p>
+            <div class="card-footer">
+              <span class="preco">R$ 54,90</span>
+              <button class="btn-cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="card-produto" data-category="kits">
+          <div class="card-badge">Especial</div>
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1512777576244-b846ac3d816f?auto=format&fit=crop&q=80&w=600" alt="Kit Presente Kaori Gold">
+          </div>
+          <div class="card-body">
+            <span class="categoria">Kit Presente</span>
+            <h3>Kit Premium Kaori Gold</h3>
+            <p>Inclui 1 Perfume 100ml + 1 Creme Acetinado + Nécessaire Exclusiva.</p>
+            <div class="card-footer">
+              <span class="preco">R$ 289,90</span>
+              <button class="btn-cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="card-produto" data-category="perfumaria">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=600" alt="Kaori Sport Masculino">
+          </div>
+          <div class="card-body">
+            <span class="categoria">Deo Colônia Masculina</span>
+            <h3>Kaori Sport Absolute (100ml)</h3>
+            <p>Notas marinhas refrescantes e fundo amadeirado de sândalo e cedro.</p>
+            <div class="card-footer">
+              <span class="preco">R$ 159,90</span>
+              <button class="btn-cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Localização -->
+  <section id="localizacao" class="localizacao section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Venha nos visitar</span>
+        <h2>Nossa Loja Física</h2>
+        <p>Experimente nossas fragrâncias de perto e conte com atendimento personalizado.</p>
+      </div>
+
+      <div class="localizacao-grid">
+        <div class="info-loja">
+          <h3><i class="fa-solid fa-store"></i> Loja Conceito Kaori</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Av. Principal dos Aromas, 1000 - Centro</p>
+          <p><i class="fa-solid fa-clock"></i> Segunda a Sábado: 09h às 21h | Domingo: 14h às 20h</p>
+          <p><i class="fa-solid fa-phone"></i> (99) 3333-4444</p>
+          <p><i class="fa-solid fa-envelope"></i> atendimento@kaoriperfumes.com.br</p>
+        </div>
+
+        <div class="mapa-container">
+          <!-- Iframe ilustrativo do Google Maps -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.918239088517!2d-42.8019!3d-5.0892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDUnMjEuMSJTIDQywrA0OCcwNi44Ilc!5e0!3m2!1pt-BR!2sbr!4v1620000000000!5m2!1pt-BR!2sbr" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="contato section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Fale Conosco</span>
+        <h2>Envie uma Mensagem</h2>
+      </div>
+
+      <div class="contato-form-container">
+        <form id="contactForm" class="contato-form">
+          <div class="form-group">
+            <input type="text" id="nome" placeholder="Seu Nome Completo" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="telefone" placeholder="Seu Telefone / WhatsApp">
+          </div>
+          <div class="form-group">
+            <textarea id="mensagem" rows="5" placeholder="Como podemos te ajudar?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé e Redes Sociais -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="#" class="logo footer-logo">Kaori <span>Perfumes</span></a>
+        <p>Celebrando a beleza e os sentimentos através de essências marcantes e produtos de alto padrão.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#historia">Nossa História</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <p>Siga-nos para lançamentos e promoções exclusivas:</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Kaori Perfumes. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
